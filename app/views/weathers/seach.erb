@@ -1,54 +1,73 @@
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-    都道府県
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-  　<li><%= link_to "北海道", show_path(lat_id: 43.0645,lon_id:141.3466), class: "dropdown-item" %></li>
-    <li><%= link_to "青森県", show_path(lat_id: 40.7831,lon_id:140.8283), class: "dropdown-item" %></li>
-    <li><%= link_to "岩手県", show_path(lat_id: 39.596,lon_id:141.3597), class: "dropdown-item" %></li>
-    <li><%= link_to "宮城県", show_path(lat_id: 38.4494,lon_id:140.9262), class: "dropdown-item" %></li>
-    <li><%= link_to "秋田県", show_path(lat_id: 39.7525,lon_id:140.4054), class: "dropdown-item" %></li>
-    <li><%= link_to "山形県", show_path(lat_id: 38.4503,lon_id:140.0997), class: "dropdown-item" %></li>
-    <li><%= link_to "福島県", show_path(lat_id: 37.3816,lon_id:140.222), class: "dropdown-item" %></li>
-    <li><%= link_to "茨城県", show_path(lat_id: 36.3103,lon_id:140.3161), class: "dropdown-item" %></li>
-    <li><%= link_to "栃木県", show_path(lat_id: 36.6926,lon_id:139.8161), class: "dropdown-item" %></li>
-    <li><%= link_to "群馬県", show_path(lat_id: 36.5075,lon_id:138.9823), class: "dropdown-item" %></li>
-    <li><%= link_to "埼玉県", show_path(lat_id: 35.8572,lon_id:139.649), class: "dropdown-item" %></li>
-    <li><%= link_to "千葉県", show_path(lat_id: 35.6051,lon_id:140.1233), class: "dropdown-item" %></li>
-    <li><%= link_to "東京都", show_path(lat_id: 35.6895,lon_id:139.6917), class: "dropdown-item" %></li>
-    <li><%= link_to "神奈川県", show_path(lat_id: 35.4175,lon_id:139.3389), class: "dropdown-item" %></li>
-    <li><%= link_to "新潟県", show_path(lat_id: 37.5234,lon_id:138.9175), class: "dropdown-item" %></li>
-    <li><%= link_to "富山県", show_path(lat_id: 36.6393,lon_id:137.2651), class: "dropdown-item" %></li>
-    <li><%= link_to "石川県", show_path(lat_id: 36.7715,lon_id:136.7705), class: "dropdown-item" %></li>
-    <li><%= link_to "福井県", show_path(lat_id: 35.8501,lon_id:136.2252), class: "dropdown-item" %></li>
-    <li><%= link_to "山梨県", show_path(lat_id: 35.616,lon_id:138.608), class: "dropdown-item" %></li>
-    <li><%= link_to "長野県", show_path(lat_id: 36.1346,lon_id:138.0408), class: "dropdown-item" %></li>
-    <li><%= link_to "岐阜県", show_path(lat_id: 35.7809,lon_id:137.054), class: "dropdown-item" %></li>
-    <li><%= link_to "静岡県", show_path(lat_id: 35.0252,lon_id:138.3254), class: "dropdown-item" %></li>
-    <li><%= link_to "愛知県", show_path(lat_id: 35.1802,lon_id:136.9066), class: "dropdown-item" %></li>
-    <li><%= link_to "三重県", show_path(lat_id: 34.5212,lon_id:136.383), class: "dropdown-item" %></li>
-    <li><%= link_to "滋賀県", show_path(lat_id: 35.2194,lon_id:136.1365), class: "dropdown-item" %></li>
-    <li><%= link_to "京都府", show_path(lat_id: 35.2543,lon_id:135.4412), class: "dropdown-item" %></li>
-    <li><%= link_to "大阪府", show_path(lat_id: 34.6863,lon_id:135.5197), class: "dropdown-item" %></li>
-    <li><%= link_to "兵庫県", show_path(lat_id: 35.0403,lon_id:134.826), class: "dropdown-item" %></li>
-    <li><%= link_to "奈良県", show_path(lat_id: 34.6852,lon_id:135.8329), class: "dropdown-item" %></li>
-    <li><%= link_to "和歌山県", show_path(lat_id: 33.9146,lon_id:135.5111), class: "dropdown-item" %></li>
-    <li><%= link_to "鳥取県", show_path(lat_id: 35.3679,lon_id:133.8508), class: "dropdown-item" %></li>
-    <li><%= link_to "島根県", show_path(lat_id: 35.0769,lon_id:132.5611), class: "dropdown-item" %></li>
-    <li><%= link_to "岡山県", show_path(lat_id: 34.902,lon_id:133.8102), class: "dropdown-item" %></li>
-    <li><%= link_to "広島県", show_path(lat_id: 34.6067,lon_id:132.7854), class: "dropdown-item" %></li>
-    <li><%= link_to "山口県", show_path(lat_id: 34.2061,lon_id:131.5705), class: "dropdown-item" %></li>
-    <li><%= link_to "徳島県", show_path(lat_id: 33.9218,lon_id:134.2368), class: "dropdown-item" %></li>
-    <li><%= link_to "香川県", show_path(lat_id: 34.2472,lon_id:133.9947), class: "dropdown-item" %></li>
-    <li><%= link_to "愛媛県", show_path(lat_id: 33.6258,lon_id:132.8547), class: "dropdown-item" %></li>
-    <li><%= link_to "高知県", show_path(lat_id: 33.428,lon_id:133.364), class: "dropdown-item" %></li>
-    <li><%= link_to "福岡県", show_path(lat_id: 33.5281,lon_id:130.6647), class: "dropdown-item" %></li>
-    <li><%= link_to "佐賀県", show_path(lat_id: 33.289,lon_id:130.1149), class: "dropdown-item" %></li>
-    <li><%= link_to "長崎県", show_path(lat_id: 33.2334,lon_id:129.6111), class: "dropdown-item" %></li>
-    <li><%= link_to "熊本県", show_path(lat_id: 32.6205,lon_id:130.7543), class: "dropdown-item" %></li>
-    <li><%= link_to "大分県", show_path(lat_id: 33.199,lon_id:131.4335), class: "dropdown-item" %></li>
-    <li><%= link_to "宮崎県", show_path(lat_id: 32.1981,lon_id:131.2976), class: "dropdown-item" %></li>
-    <li><%= link_to "鹿児島県", show_path(lat_id: 31.0322,lon_id:130.4329), class: "dropdown-item" %></li>
-    <li><%= link_to "沖縄県", show_path(lat_id: 25.7722,lon_id:126.6687), class: "dropdown-item" %></li>
-  </ul>
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-pills card-header-pills">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">ユーザー</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">偏頭痛データ</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">偏頭痛カウンター</h5>
+    <p class="card-text">都道府県を選んでください！</p>
+    <div class="dropdown">
+  　　<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    　　都道府県
+  　　</button>
+  　　<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    　　<li><%= link_to "北海道", show_path(lat_id: 43.0645,lon_id:141.3466), class: "dropdown-item" %></li>
+    　　<li><%= link_to "青森県", show_path(lat_id: 40.7831,lon_id:140.8283), class: "dropdown-item" %></li>
+    　　<li><%= link_to "岩手県", show_path(lat_id: 39.596,lon_id:141.3597), class: "dropdown-item" %></li>
+    　　<li><%= link_to "宮城県", show_path(lat_id: 38.4494,lon_id:140.9262), class: "dropdown-item" %></li>
+    　　<li><%= link_to "秋田県", show_path(lat_id: 39.7525,lon_id:140.4054), class: "dropdown-item" %></li>
+    　　<li><%= link_to "山形県", show_path(lat_id: 38.4503,lon_id:140.0997), class: "dropdown-item" %></li>
+    　　<li><%= link_to "福島県", show_path(lat_id: 37.3816,lon_id:140.222), class: "dropdown-item" %></li>
+    　　<li><%= link_to "茨城県", show_path(lat_id: 36.3103,lon_id:140.3161), class: "dropdown-item" %></li>
+    　　<li><%= link_to "栃木県", show_path(lat_id: 36.6926,lon_id:139.8161), class: "dropdown-item" %></li>
+    　　<li><%= link_to "群馬県", show_path(lat_id: 36.5075,lon_id:138.9823), class: "dropdown-item" %></li>
+    　　<li><%= link_to "埼玉県", show_path(lat_id: 35.8572,lon_id:139.649), class: "dropdown-item" %></li>
+    　　<li><%= link_to "千葉県", show_path(lat_id: 35.6051,lon_id:140.1233), class: "dropdown-item" %></li>
+    　　<li><%= link_to "東京都", show_path(lat_id: 35.6895,lon_id:139.6917), class: "dropdown-item" %></li>
+    　　<li><%= link_to "神奈川県", show_path(lat_id: 35.4175,lon_id:139.3389), class: "dropdown-item" %></li>
+    　　<li><%= link_to "新潟県", show_path(lat_id: 37.5234,lon_id:138.9175), class: "dropdown-item" %></li>
+    　　<li><%= link_to "富山県", show_path(lat_id: 36.6393,lon_id:137.2651), class: "dropdown-item" %></li>
+    　　<li><%= link_to "石川県", show_path(lat_id: 36.7715,lon_id:136.7705), class: "dropdown-item" %></li>
+    　　<li><%= link_to "福井県", show_path(lat_id: 35.8501,lon_id:136.2252), class: "dropdown-item" %></li>
+    　　<li><%= link_to "山梨県", show_path(lat_id: 35.616,lon_id:138.608), class: "dropdown-item" %></li>
+    　　<li><%= link_to "長野県", show_path(lat_id: 36.1346,lon_id:138.0408), class: "dropdown-item" %></li>
+    　　<li><%= link_to "岐阜県", show_path(lat_id: 35.7809,lon_id:137.054), class: "dropdown-item" %></li>
+    　　<li><%= link_to "静岡県", show_path(lat_id: 35.0252,lon_id:138.3254), class: "dropdown-item" %></li>
+    　　<li><%= link_to "愛知県", show_path(lat_id: 35.1802,lon_id:136.9066), class: "dropdown-item" %></li>
+    　　<li><%= link_to "三重県", show_path(lat_id: 34.5212,lon_id:136.383), class: "dropdown-item" %></li>
+    　　<li><%= link_to "滋賀県", show_path(lat_id: 35.2194,lon_id:136.1365), class: "dropdown-item" %></li>
+    　　<li><%= link_to "京都府", show_path(lat_id: 35.2543,lon_id:135.4412), class: "dropdown-item" %></li>
+    　　<li><%= link_to "大阪府", show_path(lat_id: 34.6863,lon_id:135.5197), class: "dropdown-item" %></li>
+    　　<li><%= link_to "兵庫県", show_path(lat_id: 35.0403,lon_id:134.826), class: "dropdown-item" %></li>
+    　　<li><%= link_to "奈良県", show_path(lat_id: 34.6852,lon_id:135.8329), class: "dropdown-item" %></li>
+    　　<li><%= link_to "和歌山県", show_path(lat_id: 33.9146,lon_id:135.5111), class: "dropdown-item" %></li>
+    　　<li><%= link_to "鳥取県", show_path(lat_id: 35.3679,lon_id:133.8508), class: "dropdown-item" %></li>
+    　　<li><%= link_to "島根県", show_path(lat_id: 35.0769,lon_id:132.5611), class: "dropdown-item" %></li>
+    　　<li><%= link_to "岡山県", show_path(lat_id: 34.902,lon_id:133.8102), class: "dropdown-item" %></li>
+    　　<li><%= link_to "広島県", show_path(lat_id: 34.6067,lon_id:132.7854), class: "dropdown-item" %></li>
+    　　<li><%= link_to "山口県", show_path(lat_id: 34.2061,lon_id:131.5705), class: "dropdown-item" %></li>
+    　　<li><%= link_to "徳島県", show_path(lat_id: 33.9218,lon_id:134.2368), class: "dropdown-item" %></li>
+    　　<li><%= link_to "香川県", show_path(lat_id: 34.2472,lon_id:133.9947), class: "dropdown-item" %></li>
+    　　<li><%= link_to "愛媛県", show_path(lat_id: 33.6258,lon_id:132.8547), class: "dropdown-item" %></li>
+    　　<li><%= link_to "高知県", show_path(lat_id: 33.428,lon_id:133.364), class: "dropdown-item" %></li>
+    　　<li><%= link_to "福岡県", show_path(lat_id: 33.5281,lon_id:130.6647), class: "dropdown-item" %></li>
+    　　<li><%= link_to "佐賀県", show_path(lat_id: 33.289,lon_id:130.1149), class: "dropdown-item" %></li>
+    　　<li><%= link_to "長崎県", show_path(lat_id: 33.2334,lon_id:129.6111), class: "dropdown-item" %></li>
+    　　<li><%= link_to "熊本県", show_path(lat_id: 32.6205,lon_id:130.7543), class: "dropdown-item" %></li>
+    　　<li><%= link_to "大分県", show_path(lat_id: 33.199,lon_id:131.4335), class: "dropdown-item" %></li>
+    　　<li><%= link_to "宮崎県", show_path(lat_id: 32.1981,lon_id:131.2976), class: "dropdown-item" %></li>
+    　　<li><%= link_to "鹿児島県", show_path(lat_id: 31.0322,lon_id:130.4329), class: "dropdown-item" %></li>
+    　　<li><%= link_to "沖縄県", show_path(lat_id: 25.7722,lon_id:126.6687), class: "dropdown-item" %></li>
+  　　</ul>
+　　</div>
+  </div>
 </div>
