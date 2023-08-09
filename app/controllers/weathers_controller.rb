@@ -1,5 +1,5 @@
 class WeathersController < ApplicationController
-  
+
   def search
 
   end
