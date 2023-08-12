@@ -1,24 +1,10 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<p>
-  <strong>Password:</strong>
-  <%= @user.password %>
-</p>
-
-<p>
-  <strong>Password confirmation:</strong>
-  <%= @user.password_confirmation %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<div class="card text-center">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">ユーザーネーム：<%=@user.name%></li>
+    <% if Average.exists?(user_id: current_user.id) %>
+      <li class="list-group-item">頭痛の気圧アベレージ：<%=@average%></li>
+    <% else %>
+      <li class="list-group-item">頭痛の気圧アベレージ：現在、頭痛が記録されていません。</li>
+    <% end %>
+  </ul>
+</div>

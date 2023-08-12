@@ -9,4 +9,8 @@ Rails.application.routes.draw do
   post 'login', to: 'user_sessions#create'
   delete 'logout', to: 'user_sessions#destroy'
 
+
+  resources :weathers do
+    resource :averages, only: [:create, :destroy]
+  end
 end

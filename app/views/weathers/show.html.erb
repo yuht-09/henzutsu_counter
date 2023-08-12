@@ -3,5 +3,8 @@
     <li class="list-group-item">都道府県：<%=@name%></li>
     <li class="list-group-item">天気：<%=@weather_main%></li>
     <li class="list-group-item">気圧：<%=@pressure%></li>
+    <% if logged_in? %>
+      <%= render partial: 'averages/average', locals: { user_id: current_user.id, weather_id: @pressure } %>
+    <% end %>
   </ul>
 </div>
