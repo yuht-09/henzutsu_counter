@@ -1,9 +1,9 @@
 <% if Average.exists?(user_id: current_user.id, weather_id: @pressure) %>
   <%= link_to weather_averages_path(weather_id: @pressure), method: :delete, class: "btn btn-outline-danger btn-lg w-100 mt-5" do %>
-    <span class="fa-pull-left">頭が痛い</span>
+    <span class="fa-pull-left">この気圧はすでに登録されています。</span>
   <% end %>
 <% else %>
   <%= link_to weather_averages_path(weather_id: @pressure), method: :post, class: "btn btn-outline-success btn-lg w-100 mt-5" do %>
-    <span class="fa-pull-left">頭が痛い</span>
+    <span class="fa-pull-left">頭が痛い！</span>
   <% end %>
 <% end %>

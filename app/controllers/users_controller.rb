@@ -2,6 +2,9 @@ class UsersController < ApplicationController
   before_action :set_user, only: %i[ show edit update destroy ]
 
   def show
+    if Average.exists?(user_id: current_user.id)
+      @average = Average.where(user_id: current_user.id).average(:weather_id).round(1)
+    end
   end
 
   def new
