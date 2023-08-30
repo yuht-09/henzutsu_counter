@@ -58,3 +58,5 @@ gem 'psych', '~> 3.1'
 gem 'dotenv-rails'
 
 gem 'sorcery'
+
+gem 'mysql2'
