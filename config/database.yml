@@ -83,3 +83,5 @@ test:
 production:
   <<: *default
   database: henzutsu_counter_production
+  username: <%= ENV['DATABASE_USER'] %>
+  password: <%= ENV['DATABASE_PASS'] %>
